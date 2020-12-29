@@ -13,7 +13,7 @@ banner="""
 | ,__/'| (_) ||  _  |   | '_`\  | |  /'_` )/',__)| |  
 | |    | | | || | | |   | |_) ) | | ( (_| |\__, \| |_ 
 (_)    (_) (_)(_) (_)   (_,__/'(___)`\__,_)(____/`\__)
-							by cracer
+							
 """
 
 usernames = []
@@ -73,14 +73,14 @@ def main():
 	print(banner)
 	if len(sys.argv) == 1:
 		print('Welcome To PMA blast ! ')
-		print("usage : python3 pma.py -u user -P pass.txt ")
+		print("usage : python3 pma.py -u url -l name -P pass.txt ")
 		print('usage :请使用-h查看更多信息')
 		sys.exit(1)
 
 	usage = """
-			python3 pma.py -u user -P passtxt
-			python3 pma.py -U user.txt -P pass.txt -T Thread
-			python3 pma.py -u user -P passtxt -T Thread
+			python3 pma.py -u url -l user -P passtxt
+			python3 pma.py -u url -L user.txt -P pass.txt -T Thread
+			python3 pma.py -u url -l user -P passtxt -T Thread
 			"""
 
 	parser = argparse.ArgumentParser(usage=usage)
